@@ -11,10 +11,10 @@
             }
         }
     ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "server.js"
-        }
-    ]
+    
+  "routes": [
+    { "src": "/api/(.*)", "dest": "https://your-backend-url/$1" },
+    { "src": "/(.*)", "dest": "/" }
+  ]
+
 }
