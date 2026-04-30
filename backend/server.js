@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 4000
 await connectDB()
 
 await connectCloudinary()
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['http://localhost:5173','https://delivery-app-frontend-navy.vercel.app']
 
 app.post('/stripe',express.raw({type:'application/json'}),stripeWebhooks)
 
