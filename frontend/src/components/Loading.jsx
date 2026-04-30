@@ -14,7 +14,7 @@ const Loading = () => {
     if(nextUrl){
         const timer = setTimeout(()=>{
             navigate(`/${nextUrl}`)
-        },20000)
+        },2000)
     }
 },[nextUrl, navigate])
   return (
